@@ -1,0 +1,64 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Vision Essentials"
+themesDir = "themes"
+theme = "hugo-hero-theme"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+    
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/logo.jpg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/logo.jpg"
+    desktop_height = "29px"
+    desktop_width = "217px"
+    alt = "Vision Essentials"
+
+  [params.homepage_meta_tags]
+    meta_description = "Vision Essentials, your number one eye care center"
+    meta_og_title = "Hugo Hero Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://hugo-hero.netlify.app"
+    meta_og_image = "images/banner/banner3.jpg"
+    meta_og_description = "Vision Essentials, your number one eye care center"
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@zerostaticio"
+    meta_twitter_creator = "@zerostaticio"
+
+[[menu.main]]
+
+
+	name = "services"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+    name = "blog"
+    url = "/work/"
+    weight = 2
+
+[[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Our Team"
+    url = "/history/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
